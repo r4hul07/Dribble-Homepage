@@ -235,10 +235,11 @@ main {
 }
 
 #page2 #container .box {
-  height: 37vh;
+  height: 40vh;
   width: 21vw;
   border-radius: 8px;
   overflow: hidden;
+  cursor: pointer;
 }
 
 #page2 #container .box .imgcontent {
