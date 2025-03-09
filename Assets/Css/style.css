@@ -38,6 +38,10 @@ main {
   font-weight: 300;
 }
 
+#page1 nav #navpt1 h4 {
+  display: none;
+}
+
 #page1 nav img {
   height: 1.7vw;
 }
@@ -386,7 +390,7 @@ main {
 }
 
 #page3 #wrapper {
-  margin-top: 10vh;  
+  margin-top: 10vh;
   height: 40%;
   width: 100%;
   white-space: nowrap;
@@ -420,85 +424,414 @@ main {
   cursor: pointer;
   margin: 8px;
   border-radius: 10px;
-  box-shadow: rgb(255, 255, 255) 2px -2px, 
-              rgba(224, 178, 255, 0.455) 4.5px -4.5px, 
-              rgb(255, 255, 255) 6px -6px, 
-              rgba(255, 188, 230, 0.501) 8.5px -8.5px;
-              
+  box-shadow: rgb(255, 255, 255) 2px -2px,
+    rgba(224, 178, 255, 0.455) 4.5px -4.5px, rgb(255, 255, 255) 6px -6px,
+    rgba(255, 188, 230, 0.501) 8.5px -8.5px;
 }
 
+footer {
+  margin-top: 10vh;
+  height: 30vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10vh;
+  color: white;
+  font-size: 1.2vw;
+  font-family: "Geologica", sans-serif;
+  font-weight: 300;
+  padding: 5vh 12vw;
+}
 
-footer{
-    margin-top: 10vh;
-    height: 30vh;
+footer #pt1 {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer #pt1 img {
+  height: 70%;
+  cursor: pointer;
+}
+
+footer #pt1 #links {
+  color: black;
+  width: 70%;
+  height: 100%;
+  display: flex;
+  gap: 3vw;
+  align-items: center;
+}
+
+footer #pt1 #links h6 {
+  font-size: 2vh;
+  font-family: "Geologica", sans-serif;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+footer #pt1 #icons {
+  color: black;
+  display: flex;
+  gap: 2vh;
+  cursor: pointer;
+}
+
+footer #pt2 {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer #pt2 .container {
+  height: 100%;
+}
+
+footer #pt2 .container a {
+  color: rgb(122, 122, 122);
+  font-size: 1.9vh;
+  font-family: "Geologica", sans-serif;
+  font-weight: 300;
+  padding: 1vh 1vw;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+  #page1 {
+    height: 80vh;
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 10vh;
-    color: white;
-    font-size: 1.2vw;
-    font-family: "Geologica", sans-serif;
-    font-weight: 300;
-    padding: 5vh 12vw;
-}
+  }
 
-footer #pt1{
-    width: 100%;
-    height: 30%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+  #page1 nav {
+    padding: 0 10px;
+    height: 8vh;
+  }
 
-footer #pt1 img{
-    height: 70%;
-    cursor: pointer;
-}
-
-footer #pt1 #links{
-    color: black;
-    width: 70%;
+  #page1 nav #navpt1 {
+    width: 10%;
     height: 100%;
-    display: flex;
-    gap: 3vw;
-    align-items: center;
+  }
 
-}
+  #page1 nav #navpt1 h5 {
+    display: none;
+  }
 
-footer #pt1 #links h6{
+  #page1 nav #navpt1 h4 {
+    display: initial;
+    font-size: 4vh;
+    font-weight: 500;
+  }
+
+  #page1 nav img {
+    height: 3.5vh;
+  }
+
+  #page1 nav #navpt2 {
+    width: 55%;
+  }
+
+  #page1 nav #navpt2 button {
+    margin: 0;
+
+    padding: 1.4vh 2.2vh;
+
     font-size: 2vh;
-    font-family: "Geologica", sans-serif;
-    font-weight: 300;
-    cursor: pointer;
-}
+  }
 
-footer #pt1 #icons{
-    color: black;
-    display: flex;
-    gap: 2vh;
-    cursor: pointer;
-}
+  #page1 nav #navpt2 button:nth-child(1) {
+    display: none;
+  }
 
-footer #pt2{
+  #page1 #content {
+    height: calc(100% - 8vh);
     width: 100%;
-    height: 30%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+  }
 
-
-footer #pt2 .container{
-    height: 100%;
-
-}
-
-footer #pt2 .container a{
-    color: rgb(122, 122, 122);
-    font-size: 1.9vh;
-    font-family: "Geologica", sans-serif;
+  #page1 #content h5 {
+    font-size: 1.8vh;
     font-weight: 300;
-    padding: 1vh 1vw;
-    cursor: pointer;
-    text-decoration: none;
+    padding: 3px 12px;
+    margin-top: 3vh;
+    background-color: rgba(215, 215, 215, 0.512);
+    color: rgb(73, 73, 73);
+  }
+
+  #page1 #content h1 {
+    font-size: 5vh;
+    font-weight: 400;
+    word-spacing: 0;
+    padding: 2px 5vw;
+    margin-top: 3.5vh;
+    line-height: 5.4vh;
+  }
+
+  #page1 #content h1 br {
+    display: none;
+  }
+
+  #page1 #content h4 {
+    font-size: 1.8vh;
+    font-weight: 200;
+    padding: 2px 6px;
+
+    margin-top: 2vh;
+  }
+
+  #page1 #content button {
+    background-color: rgba(215, 215, 215, 0.512);
+    color: rgb(0, 0, 0);
+    padding: 0.8vw 2.2vw;
+    font-size: 1.8vh;
+    font-weight: 200;
+    margin-top: 4vh;
+  }
+
+  #page1 #content #bottom {
+    margin-top: 5vh;
+    height: 40%;
+  }
+
+  #page1 #content #bottom #scroller {
+    animation: scroll 20s linear infinite;
+
+  }
+
+  #page1 #content #bottom #scroller .elem {
+    width: 35vw;
+    margin: 0 1vh;
+    border-radius: 15px;
+  }
+
+  #page1 #content #bottom #scroller .elem .overlay {
+    padding: 4vw 2vw;
+  }
+
+  #page1 #content #bottom #scroller .elem .overlay p {
+    font-size: 2.2vw;
+  }
+
+  #page1 #content #bottom #scroller .elem .overlay .skills {
+    margin-top: 0;
+  }
+
+  #page1 #content #bottom #scroller .elem .overlay .skills span {
+    font-size: 1.8vw;
+    padding: 0.3vh 1.5vw;
+    background-color: rgba(165, 165, 165, 0.282);
+  }
+
+
+
+/* page2 */
+
+
+  
+  #page2 h1 {
+    font-size: 4vh;
+    line-height: 4.5vh;
+    font-weight: 200;
+    padding: 0 15vw;
+    margin-top: 8vh;
+  }
+  
+  #page2 #container {
+    margin-top: 3vh;
+    padding: 10px 6vw;
+    grid-template-columns: 1fr;
+    row-gap: 6vw;
+  }
+  
+  #page2 #container .box {
+    height: 45vh;
+    width: 90vw;
+  }
+  
+
+  
+  #page2 #container .box .imgcontent .overlay p {
+    font-size: 2.5vh;
+    color: white;
+    }
+  
+
+  
+  
+  #page2 #container .box .imgcontent .overlay {
+    height: 25%;
+    padding: 1vw 4vw;
+    align-items: center;
+    
+  }
+  
+  #page2 #container .box .imgcontent:hover .overlay {
+    bottom: 0;
+  }
+  
+ 
+
+  
+ 
+  
+  #page2 #container .box .textcontent img {
+    height: 3vh;
+    width: 3vh;
+    border-radius: 50%;
+  }
+  
+  
+
+  .pg2btn {
+   
+    padding: 1.6vh 6vw;
+    border-radius: 30px;
+    
+    font-size: 2vh;
+    
+    margin: 5vh 0 4vh 0;
+    
+  }
+
+  /* page3 */
+
+  #page3 {
+  width: 100%;
+}
+
+#page3 #wrapper {
+  margin-top: 15vh;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+#page3 #wrapper .scroll {
+  height: 100%;
+  white-space: nowrap;
+  display: inline-block;
+  overflow: hidden;
+  width: fit-content;
+  animation: slider 40s linear infinite;
+}
+
+@keyframes slider {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% - 24px));
+  }
+}
+
+#page3 #wrapper .scroll img {
+  height: 22vh;
+  width: 58vw;
+ 
+  display: inline-block;
+
+  margin: 8px 18px;
+
+}
+
+/* footer */
+
+
+
+footer {
+  margin-top: 10vh;
+  height: 36vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  justify-content: space-between;
+  color: white;
+  font-size: 1.2vw;
+  font-family: "Geologica", sans-serif;
+  font-weight: 300;
+  padding: 0 4vw;
+}
+
+footer #pt1 {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  gap: 4vh;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer #pt1 img {
+  height: 18%;
+  cursor: pointer;
+}
+
+footer #pt1 #links {
+  color: black;
+  width: 100%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+footer #pt1 #links h6 {
+  font-size: 1.8vh;
+  font-weight: 400;
+  cursor: pointer;
+  
+}
+
+footer #pt1 #icons {
+  color: black;
+  display: flex;
+  height: 30%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+
+footer #pt1 #icons i{
+  font-size: 3vh;
+  color: rgb(0, 0, 0);
+}
+
+footer #pt2 {
+
+  width: 100%;
+  height: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;;
+}
+
+footer #pt2 .container {
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  flex-wrap: wrap;
+}
+
+
+footer #pt2 .container a {
+  color: rgb(122, 122, 122);
+  font-size: 1.9vh;
+  font-family: "Geologica", sans-serif;
+  font-weight: 300;
+  padding: 1vh 1vw;
+  cursor: pointer;
+  text-decoration: none;
+}
+
 }
